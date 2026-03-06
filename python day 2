@@ -1,0 +1,42 @@
+# variables
+name = "sanjana"
+print(name)
+output: sanjana
+
+my_name = "sanjana"
+print(my_name)
+output: sanjana
+
+# Data types
+1. Integer(int)
+age = 21
+print(age)
+output: 21
+
+2. Float
+price = 21.45
+print(price)
+output: 21.45
+
+3. String (str)
+name = "python"
+print(name)
+output: python
+
+4. Boolean (bool)
+is_student = True
+print(is_student)
+output = true
+
+# using multiple variables
+name = sanjana
+age = 21
+print(name)
+print(age)
+output: sanjana
+        21
+
+# checking data type
+age = 21
+print(type(age))
+output: <class 'int'>
