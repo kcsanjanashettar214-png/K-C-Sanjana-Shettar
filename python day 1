@@ -1,0 +1,27 @@
+print("Hello World!")
+output: Hello World!
+
+print("My name is K C Sanjana Shettar")
+output: My name is K C Sanjana Shettar
+
+print("I am learning python")
+print("pyhton gives instructions to the computer")
+output:I am learning python
+       python gives instructions to the computer
+
+print(10+5)
+output: 15
+
+print("My college is Aditya college of engineering and technology")
+My college is Aditya college of engineering and technology
+
+print(5-3)
+print(10*5)
+print(120/2)
+output: 2
+        50
+        60
+
+
+
+      
