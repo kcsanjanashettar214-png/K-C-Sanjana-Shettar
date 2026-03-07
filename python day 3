@@ -1,0 +1,104 @@
+# Input and Output in Python
+# Output in Python
+print("Hello World")
+print("Welcome to python")
+output: Hello World
+        Welcome to Python
+
+name = "Sanjana"
+print(name)
+Output: Sanjana
+
+# Input in python- input()
+name = input("enter name: ")
+print("Hello",name)
+output: enter name: Sanjana
+        Hello Sanjana
+
+# Important thing about input()
+age = input("enter age: ")
+print(age)
+output: enter age: 21
+        21
+# Type conversion
+a = int(input("enter a first number: "))
+b = int(input("enter a second number: "))
+print(a + b)
+output: enter a first number: 15
+        enter a second number: 21
+        36
+
+# Simple program - square of a number
+num = int(input("enter a number: "))
+square = num * num
+print("Square is: ",square)
+output: enter a number: 5
+        Square is: 25
+
+# program - add two numbers
+num1 = int(input("enter a first number: "))
+num2 = int(input("enter a second number: "))
+sum = num1 + num2
+print("Sum: ", sum)
+output: enter a first number: 3
+        enter a second number: 5
+        Sum: 8
+
+# print name, age, college using input
+name = input("enter a name: ")
+age = input("enter a age: ")
+college = input("enter a college name: ")
+print("name: ",name)
+print("age: ",age)
+print("college: ",college)
+output: enter a name: Sanjana
+        enter a age: 21
+        enter a college: Aditya college of Engineering and Technology
+        name: Sanjana
+        age: 21
+        college: Aditya college of Engineering and Technology
+
+# taking a number from the user and print double of that number
+num = int(input("enter a number: "))
+double = num * 2
+print("Double of the number is: ", double)
+output: enter a number: 5
+        Double of the number is: 10
+
+# take length and width and find the area of the rectangle
+length = int(input("enter length: "))
+width = int(input("enter width: "))
+area = lenght * width
+print("Area = ", area)
+output: enter length: 14
+        enter width: 15
+        Area = 210
+
+# take a number (float) from user and print double
+num = float(input("enter a number: "))
+double = num * 2
+print("the double of the number is: ", double)
+output: enter a number: 5.5
+        the double of the number is: 11.0
+
+# check even or odd
+num = int(input("enter a number: "))
+if num % 2 == 0:
+  print(num, "is even")
+else:
+  print(num, "is odd")
+output: enter a number: 5
+        5 is odd
+
+# average of three numbers
+num1 = int(input("enter a first number: "))
+num2 = int(input("enter a second number: "))
+num3 = int(input("enter a third number: "))
+average = (num1 + num2 + num3)/3
+print("Average: ", average)
+output: enter a first number: 3
+        enter a second number: 5
+        enter a third number: 7
+        Average: 5.0
+
+
