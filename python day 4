@@ -1,0 +1,90 @@
+# arthimetic operators 
+a = 10
+b = 5
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a ** b)
+print(a // b)
+print(a % b)
+output: 15
+        5
+        50
+        2
+        100000
+        2
+        0
+
+# comparison operators
+a = int(input("enter a first number: "))
+b = int(input("enter a sexond number: "))
+print("a>b: ", a>b)
+print("a<b: ", a<b)
+print("a==b: ", a==b)
+print("a!=b: ", a!=b)
+print("a<=b: ", a<=b)
+print("a>=b: ", a>=b)
+output: enter a first number:  15
+        enter a sexond number:  5
+        a>b:  True
+        a<b:  False
+        a==b:  False
+        a!=b:  True
+        a<=b:  False
+        a>=b:  True
+
+# logical operators
+# check if number is positive and even
+num = int(input("enter a number: ",))
+if num > 0 and num % 2 == 0:
+  print("The number is positive and even")
+else:
+  print("The number is negative and odd")
+  output: enter a number:  5
+          The number is negative and odd
+
+# check voting eligibility (using not)
+age = int(input("enter a age: "))
+if not age < 18:
+  print("you are eligible to vote")
+else:
+  print("you are not eligible to vote")
+output: enter a age:  15
+        you are not eligible to vote
+
+# check if number is outside a range (using  or)
+num = int(input("enter a number: "))
+if num < 10 or num > 20:
+  print("the number is outside the range 10-20 ")
+else:
+  print("the number is inside the range 10-20")
+output: enter a number:  5
+        the number is outside the range 10-20 
+
+# admission eligibility (combine and and or)
+marks = int(input("enter your marks: "))
+age = int(input("enter your age: "))
+if marks >= 50 and (age >= 18 or age <= 25):
+    print("you are eligible for admission")
+else:
+    print("you are not eligible for admission")
+output: enter your marks:  60
+        enter your age:  21
+        you are eligible for admission
+
+# login simulation
+username = input("enter a username: ")
+password = input("enter a password: ")
+if username == "admin" and password == "210407":
+  print("login successfully!")
+else:
+  print("invalid credentials")
+output: enter a username:  Sanjana
+        enter a password:  210407
+        invalid credentials
+
+
+
+
+
