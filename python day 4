@@ -18,7 +18,7 @@ output: 15
 
 # comparison operators
 a = int(input("enter a first number: "))
-b = int(input("enter a sexond number: "))
+b = int(input("enter a second number: "))
 print("a>b: ", a>b)
 print("a<b: ", a<b)
 print("a==b: ", a==b)
@@ -84,6 +84,16 @@ output: enter a username:  Sanjana
         enter a password:  210407
         invalid credentials
 
+# assignment operators
+a = 10
+a += 5
+print(a)
+output: 15
+
+a = 10
+a *= 5
+print(a)
+output: 50
 
 
 
