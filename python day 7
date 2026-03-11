@@ -1,0 +1,48 @@
+# Functions
+# Simple Function
+def greet():
+    print("Hello Welcome to Python")
+greet()
+Output:
+Hello Welcome to Python
+
+# Function with Parameters
+def greet(name):
+    print("Hello", name)
+greet("Sanjana")
+Output:
+Hello Sanjana
+
+# Function to Add Two Numbers
+def add(a, b):
+    result = a + b
+    print("Sum =", result)
+add(5, 3)
+Output:
+Sum = 8
+
+# Function with Return Value
+def add(a, b):
+    return a + b
+result = add(4, 6)
+print(result)
+Output:
+10
+
+#Function to Find Square
+def square(num):
+    return num * num
+print(square(5))
+Output:
+25
+
+# Function to Check Even or Odd
+def check(num):
+    if num % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
+check(7)
+output:
+Odd
+
