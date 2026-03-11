@@ -1,0 +1,50 @@
+# lists
+#Create a List
+numbers = [10, 20, 30, 40, 50]
+print(numbers)
+Output:
+[10, 20, 30, 40, 50]
+
+# Access List Elements
+numbers = [10, 20, 30, 40]
+print(numbers[0])
+print(numbers[2])
+Output:
+10
+30
+
+# Add Element to List
+numbers = [1, 2, 3]
+numbers.append(4)
+print(numbers)
+Output:
+[1, 2, 3, 4]
+
+# Loop Through a List
+numbers = [5, 10, 15, 20]
+for i in numbers:
+    print(i)
+Output:
+5
+10
+15
+20
+
+# Sum of List Elements
+numbers = [1, 2, 3, 4]
+total = sum(numbers)
+print(total)
+Output:
+10
+
+# Find Maximum Number
+numbers = [5, 9, 2, 15, 7]
+print(max(numbers))
+Output:
+15
+
+# Length of List
+numbers = [10, 20, 30, 40]
+print(len(numbers))
+Output
+4
