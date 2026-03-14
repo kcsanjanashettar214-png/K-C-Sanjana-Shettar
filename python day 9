@@ -1,0 +1,71 @@
+1. Function to Add Two Numbers
+def add(a, b):
+    return a + b
+
+print(add(5, 3))
+
+Output
+8
+
+2. Function to Find Square of a Number
+def square(num):
+    return num * num
+
+print(square(4))
+
+Output
+16
+
+3. Function to Check Even or Odd
+def check(num):
+    if num % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+print(check(7))
+
+Output
+Odd
+
+4. Function to Find Largest Number
+def largest(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+print(largest(10, 20))
+
+Output
+20
+
+5. Function to Find Factorial
+def factorial(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact = fact * i
+    return fact
+
+print(factorial(5))
+
+Output
+120
+
+6. Function to Print Multiplication Table
+def table(num):
+    for i in range(1, 11):
+        print(num, "x", i, "=", num*i)
+outpu:
+table(5)
+
+7. Function to Find Sum of Numbers
+def sum_numbers(n):
+    total = 0
+    for i in range(1, n+1):
+        total += i
+    return total
+print(sum_numbers(10))
+
+Output
+55
