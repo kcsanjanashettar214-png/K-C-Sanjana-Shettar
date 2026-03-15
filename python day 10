@@ -1,0 +1,55 @@
+1. Create a Tuple
+numbers = (10, 20, 30, 40)
+
+print(numbers)
+
+Output
+(10, 20, 30, 40)
+
+2. Access Tuple Elements
+
+Index starts from 0.
+
+numbers = (5, 10, 15, 20)
+
+print(numbers[0])
+print(numbers[2])
+
+Output
+5
+15
+
+3. Length of Tuple
+numbers = (1, 2, 3, 4, 5)
+
+print(len(numbers))
+
+Output
+5
+
+4. Loop Through Tuple
+numbers = (10, 20, 30)
+
+for i in numbers:
+    print(i)
+
+Output
+10
+20
+30
+
+5. Count Elements
+numbers = (1, 2, 2, 3, 2)
+
+print(numbers.count(2))
+
+Output
+3
+
+6. Find Index of Element
+numbers = (10, 20, 30, 40)
+
+print(numbers.index(30))
+
+Output
+2
