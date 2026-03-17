@@ -1,0 +1,68 @@
+# Dictionaries
+A Dictionary stores data in key–value pairs.
+Example:
+student = {"name": "Sanjana", "age": 20}
+
+ 1. Create a Dictionary
+student = {"name": "Sanjana", "age": 20}
+print(student)
+Output
+{'name': 'Sanjana', 'age': 20}
+
+ 2. Access Values
+student = {"name": "Sanjana", "age": 20}
+print(student["name"])
+Output
+Sanjana
+
+ 3. Add or Update Value
+student = {"name": "Sanjana", "age": 20}
+student["age"] = 21
+student["course"] = "Python"
+print(student)
+Output
+{'name': 'Sanjana', 'age': 21, 'course': 'Python'}
+
+ 4. Remove Item
+student = {"name": "Sanjana", "age": 20}
+student.pop("age")
+print(student)
+Output
+{'name': 'Sanjana'}
+
+ 5. Loop Through Dictionary
+student = {"name": "Sanjana", "age": 20}
+for key, value in student.items():
+    print(key, ":", value)
+Output
+name : Sanjana
+age : 20
+
+ 6. Check Key Exists
+student = {"name": "Sanjana", "age": 20}
+print("name" in student)
+Output
+True
+
+ 7. Get All Keys and Values
+student = {"name": "Sanjana", "age": 20}
+print(student.keys())
+print(student.values())
+Output
+dict_keys(['name', 'age'])
+dict_values(['Sanjana', 20])
+
+ 8. Dictionary Length
+student = {"name": "Sanjana", "age": 20}
+print(len(student))
+Output
+2
+
+ 9. Nested Dictionary
+student = {
+    "name": "Sanjana",
+    "marks": {"math": 90, "science": 85}
+}
+print(student["marks"]["math"])
+Output
+90
