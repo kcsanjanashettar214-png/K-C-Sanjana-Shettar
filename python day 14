@@ -1,0 +1,57 @@
+# File Handling
+1. Open a File
+file = open("sample.txt", "r")
+Modes:
+"r" → Read
+"w" → Write (overwrite)
+"a" → Append
+"x" → Create file
+
+2. Read File
+file = open("sample.txt", "r")
+
+content = file.read()
+print(content)
+file.close()
+
+3. Write to File
+file = open("sample.txt", "w")
+
+file.write("Hello Python")
+
+file.close()
+This will overwrite existing content.
+
+4. Append to File
+file = open("sample.txt", "a")
+file.write("\nWelcome")
+file.close()
+Adds content without deleting old data.
+
+5. Read Line by Line
+file = open("sample.txt", "r")
+for line in file:
+    print(line)
+file.close()
+
+6. Using with 
+with open("sample.txt", "r") as file:
+    print(file.read())
+
+Automatically closes the file (recommended).
+
+7. Check File Exists
+import os
+if os.path.exists("sample.txt"):
+    print("File exists")
+else:
+    print("File not found")
+    
+8. Mini Program: Write and Read
+with open("data.txt", "w") as file:
+    file.write("Python is easy")
+with open("data.txt", "r") as file:
+    print(file.read())
+Output
+Python is easy
+
