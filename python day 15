@@ -1,0 +1,56 @@
+# File Handling
+1. Basic Example (Error)
+print(10 / 0)
+This gives an error:
+ZeroDivisionError
+
+2. Using try and except
+try:
+    print(10 / 0)
+except:
+    print("Error occurred")
+Output
+Error occurred
+
+3. Handling Specific Exception
+try:
+    num = int(input("Enter number: "))
+    print(10 / num)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+except ValueError:
+    print("Invalid input")
+  
+4. Using else
+try:
+    num = int(input("Enter number: "))
+    result = 10 / num
+except:
+    print("Error")
+else:
+    print("Result =", result)
+else runs if no error occurs
+
+5. Using finally
+try:
+    print(10 / 2)
+except:
+    print("Error")
+finally:
+    print("Always executes")
+Output
+5.0
+Always executes
+
+6. Custom Error
+num = -5
+if num < 0:
+    raise ValueError("Number cannot be negative")
+  
+7. File Handling with Exception
+try:
+    file = open("test.txt", "r")
+    print(file.read())
+except FileNotFoundError:
+    print("File not found")
+output: 
