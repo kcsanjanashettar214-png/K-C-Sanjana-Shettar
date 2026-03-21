@@ -1,0 +1,86 @@
+OOP (Classes & Objects) 
+
+OOP = Object Oriented Programming
+It helps you organize code using classes and objects.
+
+1. Create a Class
+class Student:
+    name = "Sanjana"
+
+Student is a class
+
+2. Create Object
+class Student:
+    name = "Sanjana"
+
+s1 = Student()
+print(s1.name)
+Output
+Sanjana
+
+3. Using __init__ (Constructor)
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+s1 = Student("Sanjana", 20)
+
+print(s1.name)
+print(s1.age)
+Output
+Sanjana
+20
+
+4. Method in Class
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print("Hello", self.name)
+
+s1 = Student("Sanjana")
+s1.greet()
+Output
+Hello Sanjana
+
+5. Class with Multiple Objects
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("A")
+s2 = Student("B")
+
+print(s1.name)
+print(s2.name)
+Output
+A
+B
+
+6. Simple Program (Bank Account)
+class Bank:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print("Balance:", self.balance)
+
+b1 = Bank(1000)
+b1.deposit(500)
+Output
+Balance: 1500
+
+7. Access and Modify Object Data
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("Sanjana")
+s1.name = "Anu"
+
+print(s1.name)
+Output
+Anu
