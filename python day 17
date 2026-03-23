@@ -1,0 +1,103 @@
+# Advanced object oriented programming
+1. Inheritance (Parent → Child)
+class Person:
+    def show(self):
+        print("I am a person")
+class Student(Person):
+    pass
+s = Student()
+s.show()
+Output
+I am a person
+
+2. Inheritance with Constructor
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class Student(Person):
+    def display(self):
+        print("Name:", self.name)
+
+s = Student("Sanjana")
+s.display()
+Output
+Name: Sanjana
+
+3. Method Overriding
+
+Child class changes parent method.
+
+class Animal:
+    def sound(self):
+        print("Animal makes sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
+
+d = Dog()
+d.sound()
+Output
+Dog barks
+
+4. Polymorphism
+
+Same method name, different behavior.
+
+class Bird:
+    def sound(self):
+        print("Bird chirps")
+
+class Cat:
+    def sound(self):
+        print("Cat meows")
+
+b = Bird()
+c = Cat()
+
+b.sound()
+c.sound()
+Output
+Bird chirps
+Cat meows
+
+5. super() Keyword
+
+Used to call parent class constructor.
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class Student(Person):
+    def __init__(self, name, age):
+        super().__init__(name)
+        self.age = age
+
+s = Student("Sanjana", 20)
+
+print(s.name)
+print(s.age)
+Output
+Sanjana
+20
+
+6. Multiple Inheritance
+class A:
+    def showA(self):
+        print("Class A")
+
+class B:
+    def showB(self):
+        print("Class B")
+
+class C(A, B):
+    pass
+
+obj = C()
+obj.showA()
+obj.showB()
+Output
+Class A
+Class B
