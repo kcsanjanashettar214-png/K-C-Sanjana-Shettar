@@ -1,0 +1,70 @@
+What is a Module?
+A module is a Python file (.py) that contains functions or variables.
+Example:
+Create a file mymath.py
+def add(a, b):
+    return a + b
+  
+2. Import Module
+import mymath
+
+print(mymath.add(5, 3))
+Output
+8
+
+3. Import Specific Function
+from mymath import add
+
+print(add(10, 5))
+Output
+15
+
+4. Import with Alias
+import mymath as m
+
+print(m.add(2, 3))
+Output
+5
+
+5. Built-in Modules
+Python already has many modules.
+
+Example: math
+
+import math
+
+print(math.sqrt(16))
+Output
+4.0
+
+6. Using random Module
+import random
+
+print(random.randint(1, 10))
+
+Output will be any number between 1 and 10
+
+7. What is a Package?
+A package is a folder that contains multiple modules.
+
+Example structure:
+
+myproject/
+   ├── mymath.py
+   ├── mylogic.py
+
+8. Create Your Own Module Example
+
+calc.py
+
+def multiply(a, b):
+    return a * b
+
+main.py
+
+import calc
+
+print(calc.multiply(4, 5))
+
+Output
+20
