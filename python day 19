@@ -1,0 +1,108 @@
+OOP
+1. Simple Class & Object
+class Student:
+    name = "Sanjana"
+    age = 20
+
+s1 = Student()
+print(s1.name)
+print(s1.age)
+Output:
+Sanjana
+20
+
+2. Constructor (init)
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+s1 = Student("Sanjana", 20)
+print(s1.name)
+print(s1.age)
+Output:
+Sanjana
+20
+
+3. Method in Class
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print("Hello,", self.name)
+
+s1 = Student("Sanjana")
+s1.greet()
+Output:
+Hello, Sanjana
+
+4. Class Variable vs Instance Variable
+class Student:
+    school = "ABC School"
+
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("Sanjana")
+s2 = Student("Rahul")
+
+print(s1.school)
+print(s2.school)
+Output:
+ABC School
+ABC School
+
+5. Car Example
+class Car:
+    def __init__(self, brand, speed):
+        self.brand = brand
+        self.speed = speed
+
+    def show(self):
+        print("Car:", self.brand, "Speed:", self.speed)
+
+c1 = Car("Tesla", 120)
+c1.show()
+Output:
+Car: Tesla Speed: 120
+
+6. Student Details Program
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def display(self):
+        print("Name:", self.name)
+        print("Marks:", self.marks)
+
+s1 = Student("Sanjana", 95)
+s1.display()
+Output:
+Name: Sanjana
+Marks: 95
+
+7. Calculator Class
+class Calculator:
+    def add(self, a, b):
+        return a + b
+
+c = Calculator()
+print(c.add(5, 3))
+Output:
+8
+
+8. Rectangle Area
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+r = Rectangle(5, 3)
+print("Area:", r.area())
+Output:
+Area: 15
