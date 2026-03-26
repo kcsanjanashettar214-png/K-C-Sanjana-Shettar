@@ -1,0 +1,120 @@
+1. Calculator Program
+Program
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    return a / b
+
+print("1.Add 2.Subtract 3.Multiply 4.Divide")
+choice = int(input("Enter choice: "))
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+if choice == 1:
+    print(add(a, b))
+elif choice == 2:
+    print(sub(a, b))
+elif choice == 3:
+    print(mul(a, b))
+elif choice == 4:
+    print(div(a, b))
+else:
+    print("Invalid choice")
+output:
+Enter choice: 1
+Enter first number: 5
+Enter second number: 3
+8
+
+2. Number Guessing Game
+Program
+import random
+
+number = random.randint(1, 10)
+
+guess = int(input("Guess number (1-10): "))
+
+if guess == number:
+    print("Correct!")
+else:
+    print("Wrong! Number was", number)
+output:
+Guess number (1-10): 4
+(example)
+Wrong! Number was 7
+
+3. Student Record (Dictionary)
+Program
+student = {}
+
+name = input("Enter name: ")
+marks = int(input("Enter marks: "))
+
+student[name] = marks
+
+print(student)
+output:
+Enter name: Sanjana
+Enter marks: 90
+{'Sanjana': 90}
+
+4. To-Do List (List)
+Program
+tasks = []
+
+for i in range(3):
+    task = input("Enter task: ")
+    tasks.append(task)
+
+print("Your tasks:")
+for t in tasks:
+    print(t)
+output:
+Enter task: Study
+Enter task: Practice Python
+Enter task: Sleep
+Your tasks:
+Study
+Practice Python
+Sleep
+
+5. File Writer
+Program
+with open("notes.txt", "w") as file:
+    text = input("Enter text: ")
+    file.write(text)
+
+with open("notes.txt", "r") as file:
+    print(file.read())
+Input
+Enter text: Hello Python
+Output
+Hello Python
+
+6. Simple Login System
+Program
+username = "admin"
+password = "1234"
+
+u = input("Enter username: ")
+p = input("Enter password: ")
+
+if u == username and p == password:
+    print("Login successful")
+else:
+    print("Invalid credentials")
+output:
+Enter username: admin
+Enter password: 1234
+Login successful
+
+
+ 
