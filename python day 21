@@ -1,0 +1,85 @@
+1. What is an API?
+
+API = Application Programming Interface
+It allows your program to get data from websites/services.
+
+Example:
+
+Weather data 🌦️
+Stock prices 📈
+Maps 
+
+2. Install requests Library
+pip install requests
+
+3. Simple API Program (Get Data)
+Program
+import requests
+
+url = "https://api.github.com"
+
+response = requests.get(url)
+
+print(response.status_code)
+Output
+200
+
+200 means request successful
+
+4. Get JSON Data from API
+Program
+import requests
+
+url = "https://api.github.com"
+
+response = requests.get(url)
+
+data = response.json()
+
+print(data)
+Output (shortened)
+{'current_user_url': 'https://api.github.com/user', ...}
+
+5. Weather API Example 🌦️
+Program
+import requests
+
+city = input("Enter city: ")
+
+url = f"https://wttr.in/{city}?format=3"
+
+response = requests.get(url)
+
+print(response.text)
+Input
+Enter city: Bangalore
+Output (example)
+Bangalore: +28°C
+
+6. Random Joke API 
+Program
+import requests
+
+url = "https://official-joke-api.appspot.com/random_joke"
+
+response = requests.get(url)
+
+data = response.json()
+
+print(data["setup"])
+print(data["punchline"])
+Output (example)
+Why did the computer go to the doctor?
+Because it had a virus!
+
+7. Check API Status
+import requests
+
+response = requests.get("https://api.github.com")
+
+if response.status_code == 200:
+    print("Success")
+else:
+    print("Failed")
+Output
+Success
