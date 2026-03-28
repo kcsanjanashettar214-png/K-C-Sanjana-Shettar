@@ -1,0 +1,105 @@
+GUI using Tkinter 
+
+GUI = Graphical User Interface
+It helps you create windows, buttons, apps instead of just text output.
+
+1. What is Tkinter?
+
+Tkinter is Python’s built-in library to create GUI applications.
+
+2. First GUI Program (Window)
+Program
+import tkinter as tk
+
+window = tk.Tk()
+window.title("My App")
+window.geometry("300x200")
+
+window.mainloop()
+Output
+
+A window opens with title “My App”
+
+3. Add Label (Text)
+import tkinter as tk
+
+window = tk.Tk()
+
+label = tk.Label(window, text="Hello Python")
+label.pack()
+
+window.mainloop()
+Output
+
+Window with text: Hello Python
+
+4. Add Button
+import tkinter as tk
+
+window = tk.Tk()
+
+def click():
+    print("Button clicked")
+
+button = tk.Button(window, text="Click Me", command=click)
+button.pack()
+
+window.mainloop()
+Output
+
+Button appears
+Clicking prints:
+
+Button clicked
+
+5. Entry Box (User Input)
+import tkinter as tk
+
+window = tk.Tk()
+
+entry = tk.Entry(window)
+entry.pack()
+
+window.mainloop()
+Output
+
+Input box appears
+
+6. Button + Input Example
+import tkinter as tk
+
+window = tk.Tk()
+
+entry = tk.Entry(window)
+entry.pack()
+
+def show():
+    print(entry.get())
+
+button = tk.Button(window, text="Show", command=show)
+button.pack()
+
+window.mainloop()
+Output
+
+Enter text → click button → prints entered text
+
+7. Mini GUI Project – Simple Calculator
+import tkinter as tk
+
+window = tk.Tk()
+
+e1 = tk.Entry(window)
+e1.pack()
+
+e2 = tk.Entry(window)
+e2.pack()
+
+def add():
+    result = int(e1.get()) + int(e2.get())
+    print("Sum:", result)
+
+button = tk.Button(window, text="Add", command=add)
+button.pack()
+
+window.mainloop()
