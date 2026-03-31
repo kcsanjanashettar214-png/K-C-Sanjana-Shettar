@@ -1,0 +1,130 @@
+Database (SQLite) 
+
+A database is used to store data permanently (like users, records, etc.).
+
+We use SQLite (built into Python, no installation needed)
+
+1. Connect to Database
+Program
+import sqlite3
+
+conn = sqlite3.connect("student.db")
+print("Database connected")
+conn.close()
+Output
+Database connected
+
+2. Create Table
+import sqlite3
+
+conn = sqlite3.connect("student.db")
+cursor = conn.cursor()
+
+cursor.execute("CREATE TABLE student (name TEXT, marks INTEGER)")
+
+conn.commit()
+conn.close()
+Output
+
+Table created (no visible output)
+
+3. Insert Data
+import sqlite3
+
+conn = sqlite3.connect("student.db")
+cursor = conn.cursor()
+
+cursor.execute("INSERT INTO student VALUES ('Sanjana', 90)")
+
+conn.commit()
+conn.close()
+Output
+
+Data inserted (no visible output)
+
+4. Read Data
+import sqlite3
+
+conn = sqlite3.connect("student.db")
+cursor = conn.cursor()
+
+cursor.execute("SELECT * FROM student")
+
+data = cursor.fetchall()
+
+print(data)
+
+conn.close()
+Output
+[('Sanjana', 90)]
+
+5. Insert Multiple Records
+import sqlite3
+
+conn = sqlite3.connect("student.db")
+cursor = conn.cursor()
+
+students = [
+    ('A', 80),
+    ('B', 85),
+    ('C', 88)
+]
+
+cursor.executemany("INSERT INTO student VALUES (?, ?)", students)
+
+conn.commit()
+conn.close()
+Output
+
+Multiple records inserted
+
+6. Update Data
+import sqlite3
+
+conn = sqlite3.connect("student.db")
+cursor = conn.cursor()
+
+cursor.execute("UPDATE student SET marks = 95 WHERE name = 'Sanjana'")
+
+conn.commit()
+conn.close()
+Output
+
+Data updated
+
+7. Delete Data
+import sqlite3
+
+conn = sqlite3.connect("student.db")
+cursor = conn.cursor()
+
+cursor.execute("DELETE FROM student WHERE name = 'A'")
+
+conn.commit()
+conn.close()
+Output
+
+Data deleted
+
+8. Mini Database Program
+import sqlite3
+
+conn = sqlite3.connect("student.db")
+cursor = conn.cursor()
+
+name = input("Enter name: ")
+marks = int(input("Enter marks: "))
+
+cursor.execute("INSERT INTO student VALUES (?, ?)", (name, marks))
+
+conn.commit()
+
+cursor.execute("SELECT * FROM student")
+print(cursor.fetchall())
+
+conn.close()
+Input
+Enter name: Rahul
+Enter marks: 85
+Output (example)
+[('Sanjana', 95), ('B', 85), ('C', 88), ('Rahul', 85)]
