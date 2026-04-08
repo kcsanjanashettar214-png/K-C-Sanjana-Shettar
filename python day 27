@@ -1,0 +1,67 @@
+Project Structure
+todo_app/
+ ├── app.py
+ └── templates/
+      └── index.html
+   
+1. app.py (Main Python File)
+from flask import Flask, render_template, request, redirect
+
+app = Flask(__name__)
+
+tasks = []
+
+@app.route("/", methods=["GET", "POST"])
+def home():
+    if request.method == "POST":
+        task = request.form["task"]
+        tasks.append(task)
+        return redirect("/")
+    return render_template("index.html", tasks=tasks)
+
+if __name__ == "__main__":
+    app.run(debug=True)
+  
+2. templates/index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do App</title>
+</head>
+<body>
+
+<h2> To-Do App</h2>
+
+<form method="post">
+    <input type="text" name="task" placeholder="Enter task" required>
+    <input type="submit" value="Add Task">
+</form>
+
+<h3>Your Tasks:</h3>
+
+<ul>
+{% for t in tasks %}
+    <li>{{ t }}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
+
+How to Run
+Install Flask:
+pip install flask
+
+Run:
+python app.py
+
+Open browser:
+http://127.0.0.1:5000/
+
+Example Input (Browser)
+Enter task: Study Python
+Enter task: Practice coding
+Output (Web Page)
+Your Tasks:
+• Study Python
+• Practice coding
