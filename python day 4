@@ -26,7 +26,7 @@ print("a!=b: ", a!=b)
 print("a<=b: ", a<=b)
 print("a>=b: ", a>=b)
 output: enter a first number:  15
-        enter a sexond number:  5
+        enter a second number:  5
         a>b:  True
         a<b:  False
         a==b:  False
