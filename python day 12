@@ -17,8 +17,8 @@ Sanjana
 
  3. Add or Update Value
 student = {"name": "Sanjana", "age": 20}
-student["age"] = 21
-student["course"] = "Python"
+student.update["age"] = 21
+student.add["course"] = "Python"
 print(student)
 Output
 {'name': 'Sanjana', 'age': 21, 'course': 'Python'}
@@ -61,7 +61,7 @@ Output
  9. Nested Dictionary
 student = {
     "name": "Sanjana",
-    "marks": {"math": 90, "science": 85}
+    "marks": {"maths": 90, "science": 85}
 }
 print(student["marks"]["math"])
 Output
